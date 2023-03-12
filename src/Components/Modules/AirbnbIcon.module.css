@@ -1,0 +1,11 @@
+.icon-div {
+    color:#FF385C;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.icon-div i {
+    font-size: 2.3rem;
+}

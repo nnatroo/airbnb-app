@@ -1,0 +1,31 @@
+.search{
+    transition: box-shadow .3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid grey;
+    padding: 0.35rem 0.5rem;
+    padding-left: 1.5rem;
+    border-radius: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.searchIcon{
+
+    font-size: 0.7rem;
+    background-color: red;
+    color: white;
+    padding: 0.5rem 0.55rem;
+    border-radius: 50%;
+}
+
+hr{
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
