@@ -4,8 +4,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.7rem 5rem;
-    position: fixed;
-    box-sizing: inherit;
+    position: sticky;
+    top: 0;
+    background-color: white;
     z-index: 999;
     box-sizing: border-box;
     width: 100%;
