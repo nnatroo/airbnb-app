@@ -4,7 +4,7 @@ const UserControls = (props) => {
   return (
     <>
       <div className={classes.user_controls}>
-          <a href='/'><span className={classes.user_controls_text}>Airbnb your home</span></a>
+          <div href='/' className={classes.user_controls_text}>Airbnb your home</div>
         <div className={classes.user_controls_globe}>
           <i class="fa-solid fa-lg fa-globe"></i>
         </div>

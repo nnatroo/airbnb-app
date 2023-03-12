@@ -1,6 +1,8 @@
 .apartaments-div{
+    margin: 5% auto;
+    width: 92%;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
-    grid-gap: 
+    grid-gap: 1.5rem;
 }

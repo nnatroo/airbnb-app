@@ -7,7 +7,7 @@ const Apartaments = (props) => {
         <Apartament
             key={index}
             img={apartament.img}
-            name={apartament.name}
+            location={apartament.location}
             rating={apartament.rating}
             description={apartament.description}
             startDate={apartament.startDate}

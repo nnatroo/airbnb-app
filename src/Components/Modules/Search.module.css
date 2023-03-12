@@ -1,13 +1,19 @@
 .search{
+    font-size: 0.85rem;
+    font-weight: lighter;
     transition: box-shadow .3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.3);
     padding: 0.35rem 0.5rem;
     padding-left: 1.5rem;
     border-radius: 2rem;
+}
+
+b{
+    font-weight: 550;
 }
 
 li{
@@ -17,9 +23,9 @@ li{
 .searchIcon{
 
     font-size: 0.7rem;
-    background-color: red;
+    background-color: #FF385C;
     color: white;
-    padding: 0.5rem 0.55rem;
+    padding: 0.5rem 0.6rem;
     border-radius: 50%;
 }
 
@@ -29,3 +35,13 @@ hr{
     margin-bottom: 0.5rem;
 }
 
+.search:hover{
+    box-shadow: 0rem  0.2rem rgba(33, 33, 33, 0.12); 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .search {
+        width: 100%;
+    }
+  }

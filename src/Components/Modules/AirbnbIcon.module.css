@@ -1,11 +1,25 @@
 .icon-div {
-    color:#FF385C;
+    color: #FF385C;
     font-size: 1.5rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     gap: 0.3rem;
 }
+
 .icon-div i {
     font-size: 2.3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar_title {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .icon-div {
+        display: none;
+    }
 }

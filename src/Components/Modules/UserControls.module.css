@@ -5,15 +5,22 @@ a {
 
 .user_controls {
     display: flex;
-    gap: 1.6rem;
+    gap: 0.8rem;
     align-items: center;
     justify-content: space-between;
+    margin-right: 3%;
 }
 
 .user_controls_text {
-    font-weight: bold;  
+    font-weight: bold;
+    background-color: white;
     font-size: 0.9rem;
     white-space: nowrap;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    padding: 6%;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .user_controls_profile {
@@ -23,9 +30,34 @@ a {
     border: 1px solid #dadada;
     padding: 5% 2% 5% 5%;
     border-radius: 2rem;
+    transition: 0.5s;
 }
 
-.user_controls_text :hover {
-    border: 1px solid black;
-    color: red;
+.user_controls_globe {
+    border-radius: 2rem;
+    padding: 6%;
+    transition: 0.2s;
 }
+
+.user_controls_text:hover {
+    background-color: #F7F7F7;
+    border-radius: 2rem;
+    
+}
+
+.user_controls_globe:hover {
+    cursor: pointer;
+    background-color: #F7F7F7;
+    
+}
+
+.user_controls_profile:hover{
+    box-shadow: 0rem  0.2rem rgba(33, 33, 33, 0.12); 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .user_controls {
+      display: none;
+    }
+  }
