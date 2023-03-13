@@ -1,29 +1,31 @@
 
 import classes from "../../Modules/SearchExt.module.css";
+import backdrop from "../../Modules/Languages.module.css";
 
-const SearchExt = () => {
+const SearchExt = (props) => {
     return <>
-
+        <div className={backdrop.backdrop} onClick={props.cancelHighlight}></div>
         <div className={classes.searchExt}>
             <div className={classes.searchExtInput}>
-                <div>
-                    <label htmlFor="where">Where</label>
+                <div className={classes.searchDest}>
+                    <span>Where</span>
                     <input type="text" name="where" placeholder="search destinations"/>
                 </div>
-                <div>
-                    <span>Check In</span>
-                    <span>Date</span>
-                </div>
-                <div>
-                    <span>Check Out</span>
+                <div className={classes.searchInputValues}>
+                    <small>Check In</small>
                     <span>Add Dates</span>
                 </div>
-                <div>
-                    <span>Who</span>
+                <div className={classes.searchInputValues}>
+                    <small>Check Out</small>
+                    <span>Add Dates</span>
+                </div>
+                <div className={classes.searchExtBtn}>
+                    <div className={classes.addGuests}>
+                    <small>Who</small>
                     <span>Add Guests</span>
-                    <div>
+                    </div>
+                    <div className={classes.magnifyingGlassIcon}>
                         <i className="fa-solid fa-magnifying-glass"></i>
-                        <span>Search</span>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@ import classes from "../Modules/ApartamentImage.module.css";
 
 const ApartamentImage = (props) => {
     return (
-        <img loading="lazy" src={props.src} alt={"Apartment"}/>
+        <img style={{width: props.width, height: props.height}} className={classes.image} loading="lazy" src={props.src} alt={"Apartment"}/>
     );
 
 }

@@ -9,19 +9,26 @@ import { useState } from "react";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
+  const [highlightNavbar, setHighlightNavbar] = useState(false);
+
+  const cancelHighlight = () => {
+    setHighlightNavbar(!highlightNavbar)
+  }
+
 
   const activeHandler = () => {
     setIsActive(!isActive);
   };
   
-  return (
-    // style={{paddingBottom: isActive ? '4rem' : '0.7rem'}}
-    <nav style={{ paddingBottom: isActive ? "10rem" : "0.7rem" }}>
+  return <>
+    <nav style={{ boxShadow: isActive && "none"}}>
       <AirbnbIcon />
       <Search isActive={activeHandler} />
       <UserControls />
     </nav>
-  );
+    { isActive && <SearchExt cancelHighlight={cancelHighlight}/>}
+    
+  </>
 }
 
 export default Navbar;

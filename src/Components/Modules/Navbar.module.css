@@ -16,7 +16,7 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
-    nav {
+    nav{
         justify-content: center;
     }
   }
