@@ -1,4 +1,4 @@
-import classes from "../../Modules/LearnMore.module.css";
+import "../../Modules/LearnMore.module.css";
 
 
 function LearnMore(){
