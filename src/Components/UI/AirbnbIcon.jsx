@@ -5,7 +5,7 @@ const AirbnbIcon = () => {
         <a href="/">
             <div className={classes['icon-div']}>
                 <i className="fa-brands fa-airbnb"></i>
-                <span className={classes.navbar_title}>airbnb</span>
+                <span className={classes.navbar_title}>airnln</span>
             </div>
         </a>
     </>
