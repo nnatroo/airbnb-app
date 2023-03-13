@@ -6,6 +6,7 @@ const Apartaments = (props) => {
         {props.items.map((apartament, index) => 
         <Apartament
             key={index}
+            id={index}
             img={apartament.img}
             location={apartament.location}
             rating={apartament.rating}

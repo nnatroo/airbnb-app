@@ -10,7 +10,7 @@
     height: 0;
     padding-bottom: 100%; 
     position: relative;
-    overflow: hidden;
+    overflow: shown;
 }
 .apartment-image-div img {
     position: absolute;

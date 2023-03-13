@@ -4,6 +4,7 @@ import apartaments from './apartaments';
 import Apartaments from './Components/Apartament/Apartaments';
 import Footer from './Components/Footer/Footer';
 
+
 import './Components/Modules/App.module.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Apartaments items={apartaments}/>
         <Footer/>
+        
   </>
   );
 }

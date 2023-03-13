@@ -20,7 +20,7 @@ const Footer = () => {
                 <li>English (US)</li>
                 <li>$ USD</li>
                 <li>Support & resources</li>
-                <i style={{paddingTop:"0.1rem"}}class="fa-solid fa-angle-up"></i>
+                <i style={{paddingTop:"0.1rem"}} className="fa-solid fa-angle-up"></i>
             </div>
         </footer>
     </>

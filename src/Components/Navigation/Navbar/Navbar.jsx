@@ -19,7 +19,6 @@ function Navbar() {
     <nav style={{ paddingBottom: isActive ? "10rem" : "0.7rem" }}>
       <AirbnbIcon />
       <Search isActive={activeHandler} />
-      {if(isActive) }
       <UserControls />
     </nav>
   );
