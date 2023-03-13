@@ -1,4 +1,5 @@
 .apartament-card{
+    cursor: pointer;
     display:flex;
     flex-direction: column;
     gap:1rem;
@@ -21,11 +22,16 @@
     object-position: center;
     border-radius: 0.8rem;
 }
-.apartment-image-div i {
+.apartment-image-div svg {
+    cursor: pointer;
     position: absolute;
     z-index: 4;
-    color: rgb(238, 238, 238);
-    font-size: 1.5rem;
+    fill: rgba(0, 0, 0, 0.5);
+    stroke: #fff;
+    stroke-width: 2rem;
+    overflow: visible;
+    width: 1.3rem;
+    height: 1.3rem;
     top: 1rem;
     right: 1rem;
 }
@@ -46,5 +52,5 @@
     font-weight: 600;
 }
 .number {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,9 +1,29 @@
 body {
     all: unset;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
   }
 
 h1 {
     margin: 0;
 }
+::selection{
+  background-color: #FF385C;
+  color: white;
+}
 
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #FF385C;
+}
