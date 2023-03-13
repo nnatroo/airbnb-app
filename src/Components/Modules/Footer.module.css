@@ -10,6 +10,10 @@ footer {
     position: fixed;
     background-color: white;
     padding: 0.7rem 5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 1.5px rgba(196,191,191,1);
+    -webkit-box-shadow: 0px 1px 2px 1.5px rgba(196,191,191,1);
+    -moz-box-shadow: 0px 1px 2px 1.5px rgba(196,191,191,1);
 }
 
 footer li{
@@ -22,4 +26,9 @@ footer div{
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+
+footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }

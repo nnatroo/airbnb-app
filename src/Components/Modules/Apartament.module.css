@@ -38,7 +38,7 @@
 .apartment-rest{
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+    gap:0.2rem;
     color:#717171;
     font-size: 0.9rem;
 }

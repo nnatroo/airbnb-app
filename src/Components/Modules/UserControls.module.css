@@ -5,7 +5,7 @@ a {
 
 .user_controls {
     display: flex;
-    gap: 0.8rem;
+    gap: 0.7rem;
     align-items: center;
     justify-content: space-between;
     margin-right: 3%;
@@ -14,7 +14,8 @@ a {
 .user_controls_text {
     font-weight: bold;
     background-color: white;
-    font-size: 0.9rem;
+    font-size: 14px;
+    font-weight: 600;
     white-space: nowrap;
     border-radius: 2rem;
     border-radius: 2rem;
