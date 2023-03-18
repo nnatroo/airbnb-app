@@ -1,29 +1,32 @@
-.searchExt{
+.searchExt {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 1px 2px -1px rgba(196,191,191,1);
-    -webkit-box-shadow: 0px 1px 2px -1px rgba(196,191,191,1);
-    -moz-box-shadow: 0px 1px 2px -1px rgba(196,191,191,1);
+    box-shadow: 0px 1px 2px -1px rgba(196, 191, 191, 1);
+    -webkit-box-shadow: 0px 1px 2px -1px rgba(196, 191, 191, 1);
+    -moz-box-shadow: 0px 1px 2px -1px rgba(196, 191, 191, 1);
     padding: 1rem 2rem;
+    background-color: #ffffff;
+    z-index: 1000;
+    position: relative;
 }
 
-.searchExtInput{
+.searchExtInput {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(128, 128, 128, 0.408);
     align-items: center;
     border-radius: 2rem;
-    
+
 }
 
-.searchExtInput input{
-    border:none;
+.searchExtInput input {
+    border: none;
     background-color: transparent;
     margin-left: 1rem;
 }
 
-.searchExtBtn{
+.searchExtBtn {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -31,7 +34,7 @@
     border-radius: 2rem;
 }
 
-.searchInputValues{
+.searchInputValues {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -39,30 +42,30 @@
     padding: 1rem 2rem;
 }
 
-.searchDest{
+.searchDest {
     border-radius: 2rem;
     padding: 1.5rem 2rem;
 }
 
-.searchDest:hover{
+.searchDest:hover {
     background-color: rgba(167, 167, 167, 0.394);
     /* box-shadow:0px 0px 20px 0px rgba(128, 128, 128, 0.445); */
     cursor: pointer;
 }
 
-.searchInputValues:hover{
+.searchInputValues:hover {
     background-color: rgba(167, 167, 167, 0.394);
     /* box-shadow:0px 0px 20px 0px rgba(128, 128, 128, 0.445); */
     cursor: pointer;
 }
 
-.searchExtBtn:hover{
+.searchExtBtn:hover {
     background-color: rgba(167, 167, 167, 0.394);
     /* box-shadow:0px 0px 20px 0px rgba(128, 128, 128, 0.445); */
     cursor: pointer;
 }
 
-.addGuests{
+.addGuests {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -70,17 +73,29 @@
     padding: 1rem 2rem;
 }
 
-.searchExtBtn i{
-    padding:1rem 1rem;
+.searchExtBtn i {
+    padding: 1rem 1rem;
     background-color: #FF385C;
     color: white;
     border-radius: 50%;
 }
 
-.magnifyingGlassIcon{
+.magnifyingGlassIcon {
     padding-right: 1rem;
 }
 
-.searchExtInput input:focus{
+.searchExtInput input:focus {
     outline: none;
 }
+
+@media only screen and (max-width: 900px) {
+    .searchExt {
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .searchExtInput{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+  }

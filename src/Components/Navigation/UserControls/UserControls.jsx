@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import classes from "../../Modules/UserControls.module.css";
 import Languages from "../../Languages/Languages";

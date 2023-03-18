@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../Modules/Arrow.module.css";
 
 const Arrow = (props) => {

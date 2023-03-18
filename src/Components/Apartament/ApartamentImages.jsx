@@ -1,36 +1,51 @@
+import React from 'react'
 import { useState, useLayoutEffect, useRef } from "react";
 import classes from "../Modules/ApartamentImages.module.css";
 import ApartamentImage from "./ApartamentImage";
 import Arrow from "../UI/Arrow";
 
 const ApartamentImages = (props) => {
-  const [count, setCount] = useState(100);
   const [width, setWidth] = useState(0);
   const apartmentRef = useRef();
 
+  let imagesAmount = props.items.length;
+
   useLayoutEffect(() => {
     setWidth(apartmentRef.current.clientWidth);
-  });
+    const handleResize = () => {
+      setWidth(apartmentRef.current.clientWidth);
+    }
+    window.addEventListener('resize', handleResize)
+  }, []);
 
+  let i = 0;
   const leftArrowClick = () => {
-    setCount((prevValue) => prevValue - 100);
-    let width = document.querySelector(
-      "." + classes["images"] + " img"
-    ).clientWidth;
-    document.getElementById(
-      "images" + props.id
-    ).style.transform += `translateX(${width}px)`;
-    console.log(width);
+    if (i - 1 >= 0) {
+      document.getElementById(
+        "images" + props.id
+      ).style.transform += `translateX(${width}px)`;
+      i--;
+    } else {
+      i = imagesAmount - 1;
+      document.getElementById(
+        "images" + props.id
+      ).style.transform = `translateX(-${(imagesAmount - 1) * width}px)`;
+    }
   };
 
   const rightArrowClick = () => {
-    setCount((prevValue) => prevValue + 100);
-    let width = document.querySelector(
-      "." + classes["images"] + " img"
-    ).clientWidth;
-    document.getElementById(
-      "images" + props.id
-    ).style.transform += `translateX(-${width}px)`;
+    
+    if (i + 1 <= imagesAmount - 1) {
+      document.getElementById(
+        "images" + props.id
+      ).style.transform += `translateX(-${width}px)`;
+      i++;
+    } else {
+      i = 0;
+      document.getElementById(
+        "images" + props.id
+      ).style.transform = `translateX(${0}px)`;
+    }
   };
 
   return (

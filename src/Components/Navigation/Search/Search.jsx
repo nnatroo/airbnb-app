@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../../Modules/Search.module.css";
 
 const Search = (props) => {

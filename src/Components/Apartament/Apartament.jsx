@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../Modules/Apartament.module.css";
 import ApartamentImages from "./ApartamentImages";
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../Modules/ApartamentImage.module.css";
 
 const ApartamentImage = (props) => {

@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../Modules/Languages.module.css";
 
 const Languages = (props) => {

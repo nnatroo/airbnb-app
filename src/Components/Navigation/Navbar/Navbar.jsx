@@ -9,11 +9,6 @@ import { useState } from "react";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
-  const [highlightNavbar, setHighlightNavbar] = useState(false);
-
-  const cancelHighlight = () => {
-    setHighlightNavbar(!highlightNavbar)
-  }
 
 
   const activeHandler = () => {
@@ -26,7 +21,7 @@ function Navbar() {
       <Search isActive={activeHandler} />
       <UserControls />
     </nav>
-    { isActive && <SearchExt cancelHighlight={cancelHighlight}/>}
+    { isActive && <SearchExt cancelHighlight={activeHandler}/>}
     
   </>
 }

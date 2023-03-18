@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "../Modules/AirbnbIcon.module.css";
 
 const AirbnbIcon = () => {
