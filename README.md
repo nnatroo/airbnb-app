@@ -39,5 +39,9 @@ npm start
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Screenshot
+![image](https://user-images.githubusercontent.com/88983923/226142286-8b0090ac-5521-4fc7-b364-1af23a267b01.png)
+
+
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
