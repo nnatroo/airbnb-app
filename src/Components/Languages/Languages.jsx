@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import classes from "../Modules/Languages.module.css";
+import "animate.css";
 
 const Languages = (props) => {
   const clickHandler = () => {
@@ -7,10 +8,9 @@ const Languages = (props) => {
   };
 
   return (
-    <>
+    <div>
       <div onClick={clickHandler} className={classes.backdrop}></div>
-      <div className={classes.modal}>
-      {/* <i className={`fa-solid fa-lg fa-xmark ` + classes.close}></i> */}
+      <div className={`${classes.modal} `}>
         <span className={classes.title}>Suggested languages and regions</span>
         <div className={classes.buttons}>
           <ul onClick={clickHandler} className={classes.button}>
@@ -27,7 +27,7 @@ const Languages = (props) => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

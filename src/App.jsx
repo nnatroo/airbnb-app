@@ -22,7 +22,7 @@ function App() {
       <Navbar />
       <Apartaments items={apartaments} />
       <BottomNavigation />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

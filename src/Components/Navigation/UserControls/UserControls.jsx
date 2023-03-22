@@ -3,6 +3,7 @@ import { useState } from "react";
 import classes from "../../Modules/UserControls.module.css";
 import Languages from "../../Languages/Languages";
 import DropdownMenu from "./DropdownMenu";
+import 'animate.css';
 
 const UserControls = (props) => {
   const [showLanguageModal, setShowLanguageModal] = useState(false);
@@ -26,11 +27,18 @@ const UserControls = (props) => {
     setDropdownActive(false);
   };
 
+  const animateHandler = (e) => {
+    e.target.classList.add("animate__wobble");
+    setTimeout(() => {
+      e.target.classList.remove("animate__wobble");
+    }, 1000);
+  }
+
   return (
     <>
       {showLanguageModal && <Languages onCancel={clickHandler} />}
       <div className={classes.user_controls}>
-        <div href="/" className={classes.user_controls_text}>
+        <div onClick={animateHandler} href="/" className={`${classes.user_controls_text} animate__animated`}>
           Airbnb your home
         </div>
         <div onClick={clickHandler} className={classes.user_controls_globe}>

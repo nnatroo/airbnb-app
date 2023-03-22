@@ -1,14 +1,14 @@
 import React from 'react'
 import classes from "../../Modules/SearchExt.module.css";
 import backdrop from "../../Modules/Languages.module.css";
+import 'animate.css';
 
 const SearchExt = (props) => {
 
 
-
   return (
     <>
-      <div className={classes.searchExt}>
+      <div className={`${classes.searchExt} animate__animated animate__slideInDown animate__faster`}>
         <div className={classes.searchExtInput}>
           <div className={classes.searchDest}>
             <span>Where</span>
